@@ -12,6 +12,13 @@ import org.springframework.web.reactive.function.client.WebClient
 @RestController
 class TestController {
 
+    @PostMapping("/test2")
+    fun test2(): String {
+
+
+        return "Success"
+    }
+
     @PostMapping("/test")
     fun fileUpload(@RequestParam("fileList") fileList: List<MultipartFile>,
                    @RequestParam("fileTypeList") fileTypeList: List<String>,
