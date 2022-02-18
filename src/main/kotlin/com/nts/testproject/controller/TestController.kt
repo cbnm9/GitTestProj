@@ -17,6 +17,7 @@ class TestController {
 
         /*
         mod1
+        releasemod2
          */
 
         return "Success"
